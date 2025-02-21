@@ -2,11 +2,11 @@
 #define IR_LEFT 12
 #define MOTOR_SPEED 180
 
-int enablerightmotor =5;
+int enablerightmotor =6;
 int rightmotorpin1 =7;
 int rightmotorpin2 =8;
 
-int enableleftmotor =6;
+int enableleftmotor =5;
 int leftmotorpin1 =9;
 int leftmotorpin2 =10;
 
@@ -26,6 +26,7 @@ void setup() {
 
   pinMode(IR_RIGHT, INPUT);
   pinMode(IR_LEFT, INPUT);
+  rm(0,0);
 }
 
 void loop() {
@@ -86,4 +87,6 @@ void rm(int left_motor_s , int right_motor_s){
     digitalWrite(rightmotorpin1,LOW);
     digitalWrite(rightmotorpin2, LOW);
   }
+  analogWrite(enablerightmotor, abs(right_motor_s));
+  analogWrite(enableleftmotor, abs(left_motor_s));
 }
