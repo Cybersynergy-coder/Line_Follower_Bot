@@ -10,4 +10,4 @@ Author:
   line number 29, 90 and 91 have been changed of Line_follower.ino
 
 
-  line have been changed of Line_follower_final.ino
+  line number 52 and 57 have been changed of Line_follower_final.ino
