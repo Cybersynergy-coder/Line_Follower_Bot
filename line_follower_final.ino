@@ -49,12 +49,12 @@ void loop()
   {
     rotateMotor(MOTOR_SPEED, MOTOR_SPEED);
   }
-  //If right sensor detects black line, then turn right
+  //If left sensor detects black line, then turn right
   else if (rightIRSensorValue == LOW && leftIRSensorValue == HIGH )
   {
       rotateMotor(-MOTOR_SPEED, MOTOR_SPEED); 
   }
-  //If left sensor detects black line, then turn left  
+  //If right sensor detects black line, then turn left  
   else if (rightIRSensorValue == HIGH && leftIRSensorValue == LOW )
   {
       rotateMotor(MOTOR_SPEED, -MOTOR_SPEED); 
