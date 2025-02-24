@@ -8,6 +8,8 @@ Author:
   
   
   line number 29, 90 and 91 have been changed of Line_follower.ino
+  this one is no more in use
 
 
   line number 52 and 57 have been changed of Line_follower_final.ino
+  this one is used right now
